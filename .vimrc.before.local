@@ -1,0 +1,50 @@
+imap jj <esc>
+
+let g:spf13_bundle_groups=['general', 'programming','python', 'misc', 'scala', 'youcompleteme']
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+let g:solarized_termcolors=16
+
+
+map <F5> :call CompileRunGcc()<cr>
+func! CompileRunGcc()
+    exec "w"
+    if &filetype == 'c'
+        exec "!gcc % -o %<"
+        exec "! ./%<"
+    elseif &filetype == 'cpp'
+        exec "!g++ % -o %<"
+        exec "! ./%<"
+    elseif &filetype == 'python'
+        exec "!python %"
+    elseif &filetype == 'html'
+        exec "!google-chrome %"
+    endif
+endfunc
+
+map <F8> :call RunGdb()<cr>
+func! RunGdb()
+    exec "w"
+    exec "make"
+    exec "!cgdb ./%<"
+endfunc
+
+" mapping for code edit
+nmap <space> o<esc>
+
+" mapping for Youcompleteme
+nmap <C-g> :YcmCompleter GoTo<cr>
+
+
+
+set nospell
+
+
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencoding=utf-8
+set encoding=utf-8
+
+
+
+
