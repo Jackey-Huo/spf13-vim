@@ -21,7 +21,7 @@ func! CompileRunGcc()
     elseif &filetype == 'html'
         exec "!google-chrome %"
     elseif &filetype == 'markdown'
-        exec "!pandoc % __tmp__.html"
+        exec "!pandoc % > __tmp__.html"
         exec "!google-chrome __tmp__.html"
         exec "!rm __tmp__.html"
     endif

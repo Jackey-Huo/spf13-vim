@@ -14,7 +14,7 @@ this is my own config and setting's of spf13-vim
 
 **Note: the markdown and html <f5> feature depend on google-chrome and pandoc**
 
-feel free to use it or fork it for you own setting, add I'd be very glad if you star the repository
+feel free to use it or fork it for you own setting, add I'd be very glad if you star the repository (●′ω`●)
 
 # Below are the origin README
 
