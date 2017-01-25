@@ -1,3 +1,25 @@
+# Jackey-Huo's fork of spf13-vim
+
+Hi guys~
+
+this is my own config and setting's of spf13-vim
+
+> * adding Youcomplete me install tag in .vimrc.before.local
+> * a well configed .ycm__extra__config.py file, you can copy it every where since all the path is setted to be absolute
+> * cmake dependence has been added into the .ycm_extra_config.py file, if you need it just run cmake cmd then it would get all the lib
+> * shortcut <C-j> for GoTo, a pretty ide-like feature depend on Youcompleteme
+> * a solarizes color theme
+> * <f5> to compiling and running codes, adapted to c, c++, python, html, markdown
+> * <f8> to compiling and debug codes, adapted to c, c++
+
+**Note: the markdown and html <f5> feature depend on google-chrome and pandoc**
+
+feel free to use it or fork it for you own setting, add I'd be very glad if you star the repository
+
+# Below are the origin README
+
+original github website: [https://github.com/spf13/spf13-vim](https://github.com/spf13/spf13-vim "Title")
+
 # spf13-vim : Steve Francia's Vim Distribution
 
                     __ _ _____              _
