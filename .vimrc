@@ -409,6 +409,9 @@
     endif
 
 
+nmap <Leader>y :!echo --==<C-R><C-w>==-- ;ici <C-R><C-W><CR>
+
+
     " Find merge conflict markers
     map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>
 
