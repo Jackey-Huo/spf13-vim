@@ -11,6 +11,11 @@ this is my own config and setting's of spf13-vim
 > * a solarizes color theme
 > * <f5> to compiling and running codes, adapted to c, c++, python, html, markdown
 > * <f8> to compiling and debug codes, adapted to c, c++
+> * install by 
+```bash
+    sh <(curl https://cdn.rawgit.com/Jackey-Huo/spf13-vim/3.0/spf13-vim.sh)
+```
+
 
 **Note: the markdown and html <f5> feature depend on google-chrome and pandoc**
 
