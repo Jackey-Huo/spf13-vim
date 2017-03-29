@@ -59,31 +59,11 @@ flags = [
 # For a C project, you would set this to 'c' instead of 'c++'.
 '-x',
 'c++',
-'-isystem',
-'/home/jackey/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/BoostParts',
-'-isystem',
-# This path will only work on OS X, but extra paths that don't exist are not
-# harmful
-'/System/Library/Frameworks/Python.framework/Headers',
-'-isystem',
-'/home/jackey/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/include',
-'-isystem',
-'/home/jackey/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/llvm/tools/clang/include',
 '-I',
-'/home/jackey/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm',
-'-I',
-'/home/jackey/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/ClangCompleter',
-'-isystem',
-'/home/jackey/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest',
-'-isystem',
-'/home/jackey/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/gtest/include',
-'-isystem',
-'/home/jackey/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock',
-'-isystem',
-'/home/jackey/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/tests/gmock/include',
-'-isystem',
 '/usr/include/',
-'-isystem',
+'-I',
+'/usr/include/c++/5/',
+'-I',
 '/usr/local/include/',
 '-I',
 './include',
@@ -102,7 +82,7 @@ flags = [
 #
 # Most projects will NOT need to set this to anything; you can just change the
 # 'flags' list of compilation flags. Notice that YCM itself uses that approach.
-compilation_database_folder = './build'
+compilation_database_folder = ''
 
 if os.path.exists( compilation_database_folder ):
   database = ycm_core.CompilationDatabase( compilation_database_folder )

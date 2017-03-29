@@ -99,7 +99,8 @@
         "set term=$TERM          " Make arrow and other keys work
     " endif
     filetype plugin indent on   " Automatically detect file types.
-    syntax on                   " Syntax highlighting
+    "syntax on                   " Syntax highlighting
+    syntax enable                   " Syntax highlighting
     set mouse=a                 " Automatically enable mouse usage
     set mousehide               " Hide the mouse cursor while typing
     scriptencoding utf-8
@@ -1252,3 +1253,5 @@ nmap <Leader>y :!echo --==<C-R><C-w>==-- ;ici <C-R><C-W><CR>
         endif
     endif
 " }
+
+

@@ -6,7 +6,6 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/
 
 let g:solarized_termcolors=16
 
-
 map <F5> :call CompileRunGcc()<cr>
 func! CompileRunGcc()
     exec "w"
@@ -22,9 +21,9 @@ func! CompileRunGcc()
     elseif &filetype == 'html'
         exec "!google-chrome %"
     elseif &filetype == 'markdown'
-        exec "!pandoc % > __tmp__.html"
-        exec "!google-chrome __tmp__.html"
-        exec "!rm __tmp__.html"
+        exec "!gimli -f %"
+        exec "!mupdf %:r.pdf"
+        exec "!rm %:r.pdf"
     endif
 endfunc
 
@@ -43,6 +42,13 @@ nmap <C-g> :YcmCompleter GoTo<cr>
 nmap <C-t> :YcmCompleter GetType<cr>
 nmap <C-b> :YcmCompleter GetDoc<cr>
 
+" mapping for jedi-vim
+"let g:jedi#use_tabs_not_buffers = 1
+"let g:jedi#use_splits_not_buffers = "left"
+"let g:jedi#popup_select_first = 0
+"let g:jedi#completions_enabled = 0
+
+
 
 set nospell
 
@@ -51,6 +57,6 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set encoding=utf-8
 
-
+source /home/jackey/.vim/cscope_maps.vim
 
 
