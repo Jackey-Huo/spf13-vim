@@ -52,6 +52,9 @@ let g:EclimCompletionMethod = 'omnifunc'
 nmap <C-t> :ProjectTree<cr>
 autocmd FileType java nnoremap <C-g> :JavaSearchContext<cr>
 
+"autocmd FileType Makefile setlocal ts=4 sw=4 softtabstop=4 expandtab
+autocmd FileType make setlocal ts=4 sw=4 expandtab
+
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 set encoding=utf-8
