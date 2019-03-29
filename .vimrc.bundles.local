@@ -1,0 +1,7 @@
+Bundle 'keith/swift.vim'
+Bundle 'udalov/kotlin-vim'
+Bundle 'OmniSharp/omnisharp-vim'
+Bundle 'posva/vim-vue'
+Bundle 'xuhdev/vim-latex-live-preview'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'brookhong/cscope.vim'
