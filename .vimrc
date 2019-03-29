@@ -99,7 +99,8 @@
         "set term=$TERM          " Make arrow and other keys work
     " endif
     filetype plugin indent on   " Automatically detect file types.
-    syntax on                   " Syntax highlighting
+    "syntax on                   " Syntax highlighting
+    syntax enable                   " Syntax highlighting
     set mouse=a                 " Automatically enable mouse usage
     set mousehide               " Hide the mouse cursor while typing
     scriptencoding utf-8
@@ -126,7 +127,7 @@
     set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
     set virtualedit=onemore             " Allow for cursor beyond last character
     set history=1000                    " Store a ton of history (default is 20)
-    set spell                           " Spell checking on
+    set nospell                           " Spell checking on
     set hidden                          " Allow buffer switching without saving
     set iskeyword-=.                    " '.' is an end of word designator
     set iskeyword-=#                    " '#' is an end of word designator
@@ -407,6 +408,9 @@
     else
         nmap <silent> <leader>/ :set invhlsearch<CR>
     endif
+
+
+nmap <Leader>y :!echo --==<C-R><C-w>==-- ;ici <C-R><C-W><CR>
 
 
     " Find merge conflict markers
@@ -1249,3 +1253,5 @@
         endif
     endif
 " }
+
+

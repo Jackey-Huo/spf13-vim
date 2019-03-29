@@ -63,6 +63,12 @@ autocmd FileType java nnoremap <C-g> :JavaSearchContext<cr>
 
 "autocmd FileType Makefile setlocal ts=4 sw=4 softtabstop=4 expandtab
 autocmd FileType cs,make setlocal ts=4 sw=4 expandtab
+" mapping for jedi-vim
+"let g:jedi#use_tabs_not_buffers = 1
+"let g:jedi#use_splits_not_buffers = "left"
+"let g:jedi#popup_select_first = 0
+"let g:jedi#completions_enabled = 0
+
 
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
