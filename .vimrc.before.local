@@ -11,6 +11,8 @@ let g:solarized_termcolors=16
 "let g:ycm_csharp_server_port=6666
 "
 let g:syntastic_cs_checkers = ['code_checker']
+let g:syntastic_python_python_exec = 'python3'
+let g:syntastic_python_checkers = ['python']
 
 let g:tex_conceal = ""
 
@@ -52,6 +54,7 @@ nmap <space> o<esc>
 
 " mapping for Youcompleteme
 nmap <C-g> :YcmCompleter GoTo<cr>
+nmap <C-r> :YcmCompleter GoToReferences<cr>
 nmap <C-t> :YcmCompleter GetType<cr>
 nmap <C-b> :YcmCompleter GetDoc<cr>
 
